@@ -40,6 +40,9 @@ namespace Example.Elasticsearch.Api
                     webBuilder.UseStartup<Startup>();
                 });
 
+        // Log index needs to enable efficent log data distribution by ES otherwise the system will slow down.
+        // Therefore the app - environment - year-month approach is used.
+        // If even this is not enough, then app - environment - year-month-day is a better choice
         private static string GetIndexFormat(HostBuilderContext serviceProvider)
         {
             var config = serviceProvider.Configuration;
