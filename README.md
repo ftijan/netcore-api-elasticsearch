@@ -4,6 +4,9 @@
 - Based on the following YouTube video tutorial: [link](https://www.youtube.com/watch?v=9tkrDqMbFMg)
 - Covers fetching the data from ES and inserting items into it
 
+## Using Elasticsearch as a log store with Serilog
+- Based on the following YouTube video tutorial: [link](https://www.youtube.com/watch?v=0acSdHJfk64)
+
 ## Elasticsearch Docker setup
 - Example assumes `Docker Desktop` is used
 - Elasticsearch version used: `7.13.3`
