@@ -35,3 +35,12 @@
 - Get all data by index name:
   - `GET http://localhost:9200/{index-name}/_search`
   - Example: `GET http://localhost:9200/employees/_search`
+
+## Running Elastic search and Kibana side by side:
+- Use the Docker compose file `docker-compose.yml` in this repository
+- To execute it, navigate to repository root folder and execute command `docker-compose up`
+- This removes the need to manually run the above `docker run...` command
+- The containers and the network hosting them are automatically created and run afterwards
+- To shut down and delete containers run:
+  - `docker-compose down`, followed by:
+  - `docker-compose rm`
